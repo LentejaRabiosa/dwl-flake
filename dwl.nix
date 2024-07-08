@@ -10,7 +10,7 @@
 , wayland-scanner
 , wayland
 , wayland-protocols
-, wlroots_0_16
+, wlroots_0_17
 , xcbutilwm
 , xwayland
 , gnumake
@@ -18,7 +18,7 @@
 
 stdenv.mkDerivation ({
   pname = "dwl";
-  version = "0.4";
+  version = "0.5";
 
   src = builtins.path { name = "dwl"; path = ./.; };
 
@@ -35,7 +35,7 @@ stdenv.mkDerivation ({
     pixman
     wayland
     wayland-protocols
-    wlroots_0_16
+    wlroots_0_17
     libX11
     xcbutilwm
     xwayland
@@ -57,7 +57,7 @@ stdenv.mkDerivation ({
   '';
 
   meta = {
-    homepage = "https://github.com/tomaskallup/dwl/";
+    homepage = "https://github.com/LentejaRabiosa/dwl-flake/";
     description = "Dynamic window manager for Wayland";
     longDescription = ''
       dwl is a compact, hackable compositor for Wayland based on wlroots. It is
